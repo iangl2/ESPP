@@ -38,6 +38,7 @@ function Characters() {
           console.log(data.heroes); // Actualiza el estado con los resultados obtenidos
         } catch (error) {
           setError("Error al cargar los héroes");
+          console.log(error)
         } finally {
           setLoading(false); // Finaliza el estado de carga
         }
