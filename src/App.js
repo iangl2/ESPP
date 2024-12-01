@@ -1,5 +1,5 @@
 import './App.css';
-import {Route, Routes, Link, useParams, Outlet} from 'react-router-dom'
+import {Route, Routes, Link} from 'react-router-dom'
 import Home from './components/home';
 import About from './components/about';
 import Characters from './components/characters';
@@ -9,6 +9,8 @@ import Heroe from './components/hero-card';
 import Movie from './components/movie';
 
 function App() {
+  console.log(process.env.REACT_APP_API_URL);
+  
 
   return (
     <div className="App">
