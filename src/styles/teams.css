@@ -1,0 +1,44 @@
+
+.main-teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://oyster.ignimgs.com/wordpress/stg.ign.com/2012/11/Avengers_vs._X-Men_Vol_1_0_Cheung_Variant.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-teams{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  .card-teams {
+    background-color: rgba(127, 255, 212, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .h1-teams {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: white;
+    letter-spacing: 0.5rem;
+    
+   
+    
+  }
+  .title-teams {
+    font-size: 1em;
+    
+}
+.info-teams {
+    font-size: 0.75em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}

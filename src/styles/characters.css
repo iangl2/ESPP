@@ -1,0 +1,108 @@
+
+.characters-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://cdnb.artstation.com/p/assets/covers/images/008/715/465/large/wei-chieh-peng-2018-0102-002-00.jpg?1514824710');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    
+  }
+  
+  .search-input {
+    display: flex;
+    width: 100%;
+    min-width: 800px;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 2rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #007bff;
+  }
+
+
+  .search-title {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: white;
+  
+
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+ 
+
+  
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    z-index: 10;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .menu li {
+    padding: 8px 0;
+    cursor: pointer;
+  }
+  
+  .menu li:hover {
+    background-color: #ddd;
+  }
+  .menu-list{
+    max-height: 110px;
+    overflow: auto;
+    text-align: left;
+   
+  }
+  .link-hero{
+    text-decoration: none;
+    color: black;
+  }

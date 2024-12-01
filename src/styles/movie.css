@@ -1,0 +1,81 @@
+.main-moviecard{
+padding: 50px;
+display: flex;
+justify-content: space-around;
+background-image: url('https://depor.com/resizer/ypJmCWB-mbKYjcqHxeSx_hXV2pE=/1200x675/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/BCKHRAJF2ZCW3FNKSKZGDBW6YA.jpg');
+background-size: cover;
+background-position: center;
+height: 100vh;
+align-items: center;
+}
+.title-moviecard {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.subtitle-moviecard {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.information-moviecard-container {
+    
+    background-color: rgba(127, 255, 212, 0.5);
+    width: 600px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.container-characters{
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: scroll;
+    gap :20px;
+    height: 100%;
+}
+.characters-movie-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(127, 255, 212, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 500px;
+    width: 500px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+ 
+    min-height: 100%;
+}
+.character-card{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.character-name, .character-description{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    color: black;
+   
+}
+.character-name{
+    
+    font-size: 2rem;
+ font-weight: bold;text-align: center;
+}
+.character-description{
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+   
+}

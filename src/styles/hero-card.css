@@ -1,0 +1,63 @@
+
+.hero-main{
+    display: flex;
+   justify-content: space-evenly;
+    align-items: center;
+    
+  
+    background-color: #f5f5f5;
+  
+    color: #333;
+    font-family: Arial, sans-serif;
+  
+}
+.hero-name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background-color: black;
+  color: white;
+ 
+}
+.hero-header {
+ width: 100%;
+ text-align: center;
+}
+.hero-image{
+    max-height: 70vh;
+    border-radius: .5rem;
+}
+.description-section{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: red;
+    padding: 20px;
+    min-width: 100vw;
+
+    color: white;
+ 
+}
+.description-title, .description-text{
+    padding-top: 2px ;
+    padding-bottom: 2px;
+
+}
+.description-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.hero-card{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.sinopsis-movies{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+}
