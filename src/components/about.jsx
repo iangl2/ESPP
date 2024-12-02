@@ -2,7 +2,8 @@ import React from 'react';
 import Javier from '../images/Javier.jpeg';
 import Wilfredo from '../images/Wilfredo.jpeg';
 import Andrew from '../images/Andrew.jpeg';
-
+import Glisheli from '../images/Glisheli.jpeg';
+import Ian from '../images/Ian.jpg';
 import '../styles/about.css';
 function About() {
   return (
@@ -25,7 +26,7 @@ function About() {
                         <p className="member-role">Chief Fronted Developer</p>
                     </div>
                     <div className="team-member">
-                        <img src="https://i.ytimg.com/vi/uNGR_WrgsqM/maxresdefault.jpg" alt="Ian Lee" class="member-image"/>
+                        <img src={Ian} alt="Ian Lee" class="member-image"/>
                         <h3>Ian Lee</h3>
                         <p className="member-role">Hokage</p>
                     </div>
@@ -35,7 +36,7 @@ function About() {
                         <p className="member-role">Vice President</p>
                     </div>
                     <div className="team-member">
-                        <img src="https://i.ytimg.com/vi/uNGR_WrgsqM/maxresdefault.jpg" alt="Glisheli Guevara" class="member-image"/>
+                        <img src={Glisheli} alt="Glisheli Guevara" class="member-image"/>
                         <h3>Glisheli Guevara</h3>
                         <p className="member-role">CMO</p>
                     </div>

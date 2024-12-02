@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import '../styles/teams.css'
+import { Link } from 'react-router-dom';
 const apiLink =process.env.REACT_APP_API_URL+"/equipos/";
 
 function Teams() {
@@ -55,15 +56,22 @@ function Teams() {
                       i--;                    
                     return(
                     
- 
-                      <a href={`/characters/${integrante}`}>{integrante}, </a>
+                        <Link to={`/characters/${integrante}`}>
+                    
+                        {integrante}, 
+                       
+                        </Link>
                      )
                     
                   }
                   return(
                     
  
-                    <a href={`/characters/${integrante}`}>{integrante} </a>
+                    <Link to={`/characters/${integrante}`}>
+                    
+                    {integrante}
+                   
+                    </Link>
                    )
                  } )}</p>
                 

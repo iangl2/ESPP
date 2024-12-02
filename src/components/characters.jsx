@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import '../styles/characters.css'
 import React, { useState, useEffect } from 'react'
 
@@ -80,11 +81,13 @@ function Characters() {
          {results.heroes.map((hero) => {
           if (hero.nombre.toLowerCase().includes(searchTerm.toLowerCase())) {
             return (
-                <a className='link-hero' href={`/characters/${hero.nombre}`}>
+              <Link className='link-hero' to={`/characters/${hero.nombre}`}>
+               
               <li key={hero.id}>
                 {hero.nombre}
               </li>
-                </a>
+                
+              </Link>
             )
           }
           return null

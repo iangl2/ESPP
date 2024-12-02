@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import '../styles/movies.css'
+import { Link } from 'react-router-dom';
 const apiLink =process.env.REACT_APP_API_URL+"/pelicula/";
 function Movies() {
   const [peliculas, setPeliculas] = useState([]);
@@ -38,15 +39,17 @@ function Movies() {
         <section className='grid-movies'>
         {peliculas.map((peliculas) => {
          
-            return (
-                <a className='' href={`/movies/${peliculas.nombre}`}>
+          return (
+              <Link to={`/movies/${peliculas.nombre}`}>
+              
                   <div className='card-movies'>
 
                 {peliculas.nombre}
                 <p className='sinopsis-movies'>{peliculas.sinopsis}</p>
                   </div>
               
-                </a>
+               
+                  </Link>
             )
           
           

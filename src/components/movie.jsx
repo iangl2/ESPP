@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 import { useState, useEffect } from 'react';
 import { useParams, Outlet } from 'react-router-dom';
 import '../styles/movie.css'
@@ -68,9 +70,11 @@ function Movie() {
               <div style={{backgroundImage: `url(${personaje.imagen})`,
               backgroundSize: "cover",
               backgroundPosition: "center"}} key={index} className="character-card">
-                <a href={"/characters/"+personaje.nombre}>
+                <Link to={"/characters/"+personaje.nombre}>
+                
                 <p className="character-name">{personaje.nombre}</p>
-                </a>
+                
+                </Link>
                 <p className="character-description">Participación: {personaje.descripcion}</p>
               </div>
             ))}
